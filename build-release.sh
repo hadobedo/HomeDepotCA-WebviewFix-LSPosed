@@ -37,7 +37,7 @@ mkdir -p "$CLASSES_DIR" "$DEX_DIR"
   $(find "$MODULE_DIR/src" -name '*.java' | sort)
 
 "$BUILD_TOOLS_DIR/d8" --min-api 29 --classpath "$ANDROID_JAR" --classpath "$CLASSES_DIR" \
-  --output "$DEX_DIR" $(find "$CLASSES_DIR/com/nick" -name '*.class' | sort)
+  --output "$DEX_DIR" $(find "$CLASSES_DIR" -path '*/de/robv/*' -prune -o -name '*.class' -print | sort)
 
 "$BUILD_TOOLS_DIR/aapt" package -f \
   -M "$MODULE_DIR/AndroidManifest.xml" \

@@ -1,4 +1,4 @@
-package com.nick.hdwebviewspoof;
+package com.hadobedo.hdcwebviewbypass;
 
 import android.app.Activity;
 import android.content.Intent;
