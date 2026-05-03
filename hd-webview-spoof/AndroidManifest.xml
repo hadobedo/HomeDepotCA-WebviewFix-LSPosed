@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hadobedo.hdcwebviewbypass">
+    package="com.hadobedo.hdcwebviewbypass"
+    android:versionCode="2"
+    android:versionName="0.1.1">
     <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="36" />
 
     <application
@@ -11,5 +13,6 @@
         <meta-data android:name="xposedmodule" android:value="true" />
         <meta-data android:name="xposeddescription" android:value="Bypasses the Home Depot Canada unsupported-device screen when Google WebView is not the default provider." />
         <meta-data android:name="xposedminversion" android:value="93" />
+        <meta-data android:name="xposedscope" android:value="com.thehomedepotca" />
     </application>
 </manifest>
